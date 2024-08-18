@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="game_styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Matemasie">
+<title>Idle game test</title>
+</head>
+<body onload="startGame()">
+<style>
+body {
+  background : #0a0a0a;
+}
+</style>
+
+<div id="snowflakeContainer">
+  <span class="snowflake"></span>
+</div>
+
+<div class="header">
+ <h1>CRYSTAL MINE</h1>
+</div>
+
+<div class="wrapper">
+     <div class="score">
+      <p id="scores" style="font-family: impact; color:white;"></p>
+        <button class="explosive" id="exp" onclick="blow()">Use TNT</button> 
+      </div>
+ <div class="container">   
+          
+  <div class="controls"> 
+     <p>Drill move</p>
+     <button class="btn"; onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+     <button class="btn"; onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+     <button class="btn2"; onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+     <button class="btn2"; onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button><br><br>
+  </div>
+
+  <div class="controls" style="width: 325px;">
+    <div class="screen">
+      <p id="gameInfo"></p>
+      <p id="autoBonus"></p>
+      <p id="percent"></p>
+    </div>
+  </div>
+  
+  <div class="controls">
+     <p>Manual mining<br>/start engine</p>
+     <button id="mouseMine" class="btn3" onclick="clickMine()">Mine</button>
+  </div>
+  
+ </div>
+
+</div>
+
+<script src="js_idle.js"></script> 
+</body>
+</html>

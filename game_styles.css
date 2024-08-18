@@ -1,0 +1,159 @@
+//snowflake lainattu demoon
+.snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+.snowflake {
+  position: fixed;
+  background-color: #a8208d;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.score {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  width: 665px;
+  height: 60px;
+  border: solid 2px blue;
+  border-radius: 10px;
+  background :  #212126;
+  box-shadow: 0 0 10px blue;
+}
+.explosive {
+  margin-top: 15px;
+  height: 30px;
+  float:right;
+  color:white;
+  background-color: red;
+  border-radius: 25px;
+  box-shadow: 0 0 10px red; 
+  outline: none;
+  transition: .5s;
+  margin-left:30px;
+}
+.explosive:hover {
+  background-color: lightgreen;
+  box-shadow: 0 0 10px green; 
+  outline: none;
+}
+.wrapper {
+  display: block;
+  position: relative;
+  //width: 640px;
+}
+.header {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  border: 2px solid blue;
+}
+h1 {
+  font-size: 35px;
+  font-family: Matemasie;
+  -webkit-text-stroke: 1px black;
+  color: #390b75;//#0b7572;
+  text-align: center;
+  padding: 10px;
+}
+canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+canvas {
+  background-image:url(uusiClikkeriin.png);
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+.container {
+  display: flex;//block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 200px;
+  background : #0a0a0a;;
+}
+.controls {
+  display: block;
+  margin-left: 15px;//auto;
+  margin-top: 15px;
+  width: 150px;
+  height: 170px;
+  border: solid 2px blue;
+  border-radius: 10px;
+  background :  #212126;
+  text-align: center;
+  color: white;
+  font-family: impact;
+  box-shadow: 0 0 10px blue;
+}
+.btn {
+    color:white;
+     background-color: blue;
+     border-radius: 25px;
+     box-shadow: 0 0 10px blue; 
+     outline: none;
+     transition: .5s;
+     }
+.btn:hover {
+     background-color: lightgreen;
+     box-shadow: 0 0 10px green; 
+     outline: none;
+     }
+.btn2 {
+    color:white;
+     background-color: #bd390d;
+     border-radius: 25px;
+     box-shadow: 0 0 10px #bd390d; 
+     outline: none;
+     transition: .5s;
+     }
+.btn2:hover {
+     background-color: lightgreen;
+     box-shadow: 0 0 10px green; 
+     outline: none;
+     }
+.btn3 {
+     width: 80px;
+     height: 80px;
+     color:white;
+     font-size: 20px;
+     background-color: darkred;
+     border-radius: 50px;
+     box-shadow: 0 0 10px darkred; 
+     outline: none;
+     transition: .5s;
+     }
+.btn3:hover {
+     background-color: green;
+     box-shadow: 0 0 10px green; 
+     outline: none;
+     }
+.screen {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 220px;
+  color: black;
+  font-size: 14px;
+  height: 130px;
+  border: solid 1px white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #e1effa;
+  background-color: #e1effa;
+}
